@@ -2,24 +2,172 @@ $fontcolor:  rgb(10%, 10%, 10%);
 $backgroundcolor: rgb(98%, 98%, 98%);
 
 
-body {
+body, html {
   font-family: "Roboto", sans-serif;
   color: $fontcolor;
-  background-color: $backgroundcolor;
+  background-color: #C0C0C0;
+  color: #C0C0C0;
   margin: 50px;
 }
 
 
-#search-bar {
-  margin-bottom: 20px;
-
-  input {
-    font-size: 1.5em;
-    border-radius: .25em;
-  }
+.mainBody{
+  background-color: #C0C0C0;
 }
 
 
-.active {
-  color: pink;
+.testDiv{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+
+.testDivId{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+}
+
+.navList{
+  position: absolute;
+
+}
+
+.navList li{
+  display: inline;
+}
+
+.navList li:hover{
+  text-decoration-color: pink;
+  background-color: white;
+}
+
+.postInputs{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+}
+
+.new_input{
+  position: relative;
+  height: 50px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.submitPost{
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+
+.navBar{
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #C0C0C0;
+}
+
+.postPreview{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-style: solid;
+  border-radius: 1px;
+  border-color: black;
+  align-content: center;
+}
+
+.previewTop{
+  position: relative;
+  height: 70%;
+  width: 90%;
+  display: block;
+  margin: auto;
+  top: 5px;
+}
+
+.previewBottom{
+  position: relative;
+  height: 25%;
+  width: 90%;
+  color: black;
+  left: 10px;
+  top: 3px;
+}
+
+.submitButton{
+  position: relative;
+  height: 50px;
+  width: 60%;
+  margin: auto;
+}
+
+.postsList{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #C0C0C0;
+  width: 100%;
+  height: 90%;
+  top: 50px;
+}
+
+.CancelLink{
+  color: red;
+  font-size: 28px;
+}
+
+.postBody{
+  position: relative;
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  bottom: 30px;
+}
+
+.postImageBox{
+  position: relative;
+  height: 300px;
+  border-style: solid;
+  background-color: white;
+  border-radius: 1px;
+}
+
+.postImage{
+  position: relative;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.postContent{
+  position: relative;
+  width: 80%;
+  height: 110px;
+  top: 10px;
+}
+
+.postText{
+  position: relative;
+}
+
+.content{
+  margin-left: 10px;
+}
+
+.deleteButton{
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  height: 50px;
+  width: 110px;
 }
