@@ -1,6 +1,3 @@
-# LAB4
+# LAB4 - Authentication
 
-I couldn't finish the whole thing. I also realized too late that you are meant to be able to edit all the fields, mine only supports editing the content.
-There's also a bug where you have to submit your new text for the post twice before it shows up. Couldn't figure out how to fix it, sorry!
-
-Didn't really do anything particularly cool, just did what we had to do.
+Once again, nothing crazy going on here. I never ended up fixing the bug from 2 weeks ago where you can only update the content of a post, and you have to click twice to do so. Other than that though I did everything the assignment wanted pretty straight-forwardly
