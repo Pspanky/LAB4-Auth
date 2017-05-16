@@ -7,8 +7,10 @@ body, html {
   color: $fontcolor;
   background-color: #C0C0C0;
   color: #C0C0C0;
-  margin: 50px;
+  margin: 30px;
+
 }
+
 
 
 .mainBody{
@@ -32,11 +34,13 @@ body, html {
 
 .navList{
   position: absolute;
+  width: 200px;
 
 }
 
 .navList li{
   display: inline;
+  margin-right: 10px;
 }
 
 .navList li:hover{
@@ -65,11 +69,15 @@ body, html {
   position: relative;
 }
 
+
 .navBar{
   position: relative;
-  width: 100%;
-  height: 80px;
+  width: 85%;
+  height: 60px;
   background-color: #C0C0C0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .postPreview{
@@ -164,12 +172,24 @@ body, html {
   margin-left: 10px;
 }
 
+.footers{
+  position: relative;
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .deleteButton{
   position: absolute;
   right: 60px;
   top: 60px;
   height: 50px;
   width: 110px;
+}
+
+.signs{
+  position: relative;
+
 }
 
 .SignInForms{
@@ -195,5 +215,11 @@ body, html {
   height: 40px;
   top: 20px;
   right: 0px;
+  background-color: red;
+}
+
+.singOutLink{
+  height: 40px;
+  width: 80px;
   background-color: red;
 }

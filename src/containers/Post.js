@@ -84,8 +84,9 @@ class Post extends Component {
             <div className="postContent content">
               {this.renderContentText(contentText)}
             </div>
-            <div className="content">
-              <i>{this.props.post.tags}</i>
+            <div className="content footers">
+              <p> <i>Tags: </i>{this.props.post.tags} </p>
+              <p> <i> Written by: </i>{this.props.post.author} </p>
             </div>
           </div>
         </div>

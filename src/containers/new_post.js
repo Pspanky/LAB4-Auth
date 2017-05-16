@@ -62,6 +62,7 @@ const mapStateToProps = state => (
     tags: state.tags,
     cover_url: state.cover_url,
     content: state.content,
+    username: state.username,
   }
 );
 

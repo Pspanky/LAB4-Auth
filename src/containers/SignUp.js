@@ -10,10 +10,12 @@ class SignUp extends Component {
     this.state = {
       email: '',
       password: '',
+      username: '',
     };
 
     this.onEmailChange = this.onEmailChange.bind(this);
     this.onPasswordChange = this.onPasswordChange.bind(this);
+    this.onUserChange = this.onUserChange.bind(this);
   }
 
   // componentDidMount() {
@@ -29,16 +31,23 @@ class SignUp extends Component {
     this.setState({ email: event.target.value });
   }
 
+  onUserChange(event) {
+    this.setState({ username: event.target.value });
+  }
+
   signUpUser() {
     const email = this.state.email;
     const password = this.state.password;
-    this.props.signupUser({ email, password }, this.props.history);
+    const username = this.state.username;
+
+    this.props.signupUser({ email, password, username }, this.props.history);
   }
 
   render() {
     return (
       <div className="SignInForms">
         <input className="SignInForm" type="text" placeholder="Enter Email" onChange={this.onEmailChange} />
+        <input className="SignInForm" type="text" placeholder="Enter Username" onChange={this.onUserChange} />
         <input className="SignInForm" type="text" placeholder="Enter Password" onChange={this.onPasswordChange} />
         <button className="SignInButton" onClick={() => this.signUpUser()} > Sign Up </button>
       </div>

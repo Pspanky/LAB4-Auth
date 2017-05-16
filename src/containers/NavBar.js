@@ -7,10 +7,13 @@ import '../style.scss';
 
 class NavBar extends Component {
 
-  renderSigns() {
+
+  renderSigns(props) {
     if (this.props.authenticated) {
       return (
-        <a onClick={() => this.props.signoutUser(this.props.history)} > Sign Out </a>
+        <li>
+          <a onClick={() => this.props.signoutUser(this.props.history)} > Sign Out </a>
+        </li>
       );
     } else {
       return (
@@ -24,13 +27,9 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav className="navBar">
-        <ul className="navList">
-          <li><NavLink to="/" exact>Home </NavLink></li>
-          <li><NavLink to="/newPost">New Post! </NavLink></li>
-          {this.renderSigns}
-        </ul>
-      </nav>
+      <ul className="navList signs">
+        {this.renderSigns()}
+      </ul>
     );
   }
 }
